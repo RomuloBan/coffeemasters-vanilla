@@ -30,8 +30,7 @@ const Router = {
             default:
                 if (route.startsWith('/product-')) {
                     pageElement = document.createElement('details-page');
-                    pageElement.textContent = 'Details';
-                    const paramId = route.substring(route.lastIndexOf('-') + 1);
+                    const paramId = route.substring(route.lastIndexOf('-')+1);
                     pageElement.dataset.productId = paramId;
                 }
         }
